@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Clock</title>
+		<link rel='stylesheet' href='style.css'>
+		<script src='script.js' defer></script>
+	</head>
+	<body>
+		<section>
+			<div class='box'>
+				<div class='hour'>
+					<div class='hr' id='hr'></div>
+					<div class='circle' style='--clr:red;'>
+						<div class='dots' id='hhdot'></div>
+						<svg>
+							<circle cx='100' cy='100' r='80' ></circle>
+							<circle cx='100' cy='100' r='80' id='hh'><\circle>
+						</svg>
+					</div>
+				</div>
+				<div class='minute'>
+					<div class='mn' id='mn'></div>
+					<div class='circle' style='--clr:yellow;'>
+						<div class='dots' id='mmdot'></div>
+						<svg>
+							<circle cx='100' cy='100' r='80' ></circle>
+							<circle cx='100' cy='100' r='80' id='mm'><\circle>
+						</svg>
+					</div>
+				</div>
+				<div class='second'>
+					<div class='sc' id='sc'></div>
+					<div class='circle' style='--clr:blue;'>
+						<div class='dots' id='ssdot'></div>
+						<svg>
+							<circle cx='100' cy='100' r='80' ></circle>
+							<circle cx='100' cy='100' r='80' id='ss'><\circle>
+						</svg>
+					</div>
+				</div>
+				<div class='am-pm'>
+					<div class='am' id='am'></div>
+					<div class='rect' style='--clr:green;'>
+						<svg>
+							<rect x='24' y='34' width='50' height='30'></rect>
+							<rect x='24' y='34' width='50' height='30' id='amm'></rect>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class='ring' style='--clr:white'>
+				<svg height="510" width="800">
+					<path d="M 100 350 q 150 -200 300 0 q 150 200 300 0 q -150 -200 -300 0 q -150 200 -300 0" />
+					<path d="M 100 350 q 150 -200 300 0 q 150 200 300 0 q -150 -200 -300 0 q -150 200 -300 0" id='ring'/>
+				</svg>
+			</div>
+		</section>
+	</body>
+</html>
